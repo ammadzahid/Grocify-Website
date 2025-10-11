@@ -4,7 +4,7 @@ import Button from '../Button/Button'
 const Hero = () => {
     return (
         <section>
-            <div className='mt-25 max-w-[1400px] mx-auto px-10 flex md:flex-row flex-col items-center' >
+            <div className='md:mt-25 mt-30 max-w-[1400px] mx-auto px-10 flex md:flex-row flex-col items-center' >
                 {/* Hero Content */}
                 <div className='flex-1'>
                     <span className='bg-orange-100 px-5 py-2 rounded-full text-orange-500'>Export Best Quality</span>
