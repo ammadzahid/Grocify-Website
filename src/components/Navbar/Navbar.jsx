@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { FaHeart } from "react-icons/fa6";
 import { HiShoppingBag } from "react-icons/hi2";
 import { IoSearch } from "react-icons/io5";
@@ -6,12 +6,21 @@ import { TbMenu2,TbMenu3 } from "react-icons/tb";
 
 const Navbar = () => {
   const [showMenu,setShowMenu]= useState(false);
+  const [IsScrolled,setIsScrolled]= useState(false);
+
   const toggleMenu=()=>{
     setShowMenu(!showMenu);
   }
+  useEffect(()=>{
+    const handleScroll = ()=>{
+      setIsScrolled(window.scrollY >10)
+    }
+    window.addEventListener('scroll', handleScroll)
+    return ()=>removeEventListener('scroll', handleScroll)
+  },[])
   return (
     <div>
-      <header className='bg-white fixed top-0 left-0 right-0 z-50'>
+      <header className={`bg-white fixed top-0 left-0 right-0 z-50 ${IsScrolled ? 'shadow-lg' : ''}`}>
         <nav className=' max-w-[1400px] mx-auto md:h-[14vh] h-[12vh] flex justify-between items-center px-10'>
 
           <a href="#" className='text-3xl font-bold'>
