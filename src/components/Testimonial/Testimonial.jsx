@@ -19,7 +19,7 @@ const Testimonial = () => {
     <section>
       <div className='max-w-[1400px] mx-auto px-10 py-10'>
         <Heading ColorText='Customers' SimpleText='Saying' />
-        <div className='flex justify-end gap-x-2 py-5'>
+        <div className='flex justify-end gap-x-2 py-5 mt-10'>
           <button className='custom-pre bg-zinc-100 rounded-lg p-2 text-2xl cursor-pointer hover:bg-gradient-to-b hover:from-orange-400 hover:to-orange-500 hover:text-white '> <IoIosArrowBack /> </button>
           <button className='custom-next bg-zinc-100 rounded-lg p-2 text-2xl cursor-pointer hover:bg-gradient-to-b hover:from-orange-400 hover:to-orange-500 hover:text-white '> <IoIosArrowForward /> </button>
         </div>
