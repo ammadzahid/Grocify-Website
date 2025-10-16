@@ -10,6 +10,7 @@ import Customer4 from '../../assets/customer4.jpg'
 import Customer5 from '../../assets/customer5.jpg'
 import 'swiper/css';
 import 'swiper/css/navigation';
+import { FaStar } from "react-icons/fa";
 
 
 const Testimonial = () => {
@@ -31,9 +32,9 @@ const Testimonial = () => {
           loop={true}
           breakpoints={{
 
-            640 : {slidesPerView :1 , spaceBetween : 20},
-            768 : {slidesPerView :2 , spaceBetween : 20},
-            1024 : {slidesPerView :3 , spaceBetween : 20},
+            640: { slidesPerView: 1, spaceBetween: 20 },
+            768: { slidesPerView: 2, spaceBetween: 20 },
+            1024: { slidesPerView: 3, spaceBetween: 20 },
           }}
           modules={[Navigation]} className="mySwiper">
           {
@@ -41,14 +42,20 @@ const Testimonial = () => {
               return (
                 <SwiperSlide className='bg-zinc-100 p-5  rounded-xl'>
                   <div className='flex flex-wrap gap-5 items-center'>
-                    <div>
-                      <span className='flex bg-red-400 w-15 h-15 rounded-full outline-3 outline-offset-3 outline-amber-200'></span>
+                    <div className='flex w-15 h-15 rounded-full outline-2 outline-offset-2 outline-orange-500 overflow-hidden'>
+                      <img src={data.image} alt="image" className='w-full h-full' />
                     </div>
 
                     <div>
                       <h5 className='text-zinc-800 font-bold text-2xl'>{data.name}</h5>
                       <p className='text-zinc-600'>{data.profession}</p>
-                      <p>⭐⭐⭐⭐⭐</p>
+                      <span div className='flex gap-1 text-yellow-400'>
+                        {
+                          Array.from({ length: data.Rating }, (_, index) => (
+                            <FaStar />
+                          ))
+                        }
+                      </span>
                     </div>
                   </div>
                   <div className='mt-7 min-h-[15vh]'>
