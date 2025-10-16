@@ -22,7 +22,7 @@ const Product = () => {
             <Heading ColorText='Our' SimpleText='Product' />
 
             {/* tables */}
-            <div className='flex gap-2 justify-center mt-10'>
+            <div className='flex flex-wrap gap-2 justify-center mt-10'>
                 {categories.map(categories => {
                     return (
                         <button key={categories} 
