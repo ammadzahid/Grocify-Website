@@ -2,7 +2,7 @@ import React from 'react'
 import Heading from '../Heading/Heading'
 import { FaHeart, FaLeaf, FaShieldAlt } from 'react-icons/fa'
 import { FaSeedling } from 'react-icons/fa6'
-import Bucket from '../../assets/basket-full-vegetables.png'
+import Bucket from '../../assets/basket-full-vegetables-min.png'
 
 
 const Values = () => {

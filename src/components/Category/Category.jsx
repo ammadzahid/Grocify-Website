@@ -1,9 +1,9 @@
 import React from 'react'
 import Heading from '../Heading/Heading'
 import Button from '../Button/Button.jsx'
-import FruitsCat from '../../assets/fruits-and-veggies.png'
-import Dairy from '../../assets/dairy-and-eggs.png'
-import Meat from '../../assets/meat-and-seafood.png'
+import FruitsCat from '../../assets/fruits-and-veggies-min.png'
+import Dairy from '../../assets/dairy-and-eggs-min.png'
+import Meat from '../../assets/meat-and-seafood-min.png'
 const Category = () => {
 
   const renderCard = category.map(card => {

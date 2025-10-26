@@ -1,6 +1,6 @@
 import React from 'react'
 import Button from '../Button/Button.jsx'
-import ImageBg from '../../assets/fresh-fruits.png'
+import ImageBg from '../../assets/fresh-fruits-min.png'
 const Discount = () => {
   return (
     <section className='bg-zinc-100 bg-contain bg-no-repeat bg-right' style={{backgroundImage: `url(${ImageBg})`}}>
