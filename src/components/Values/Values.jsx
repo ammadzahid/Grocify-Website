@@ -10,7 +10,7 @@ const Values = () => {
 
     const leftValue = values.slice(0,2).map(item => {
         return (
-            <div className='flex md:flex-row-reverse flex-col md:items-center md:py-15 py-5'>
+            <div className='flex md:flex-row-reverse flex-col md:items-center md:py-15 py-5' key ={item.id}>
                 <div>
                     <span className='flex justify-center items-center text-white text-3xl bg-gradient-to-b from-orange-400 to-orange-600 w-15 h-15 rounded-full'>{item.icon}</span>
                 </div>
@@ -25,7 +25,7 @@ const Values = () => {
 
     const rightValue = values.slice(2).map(item => {
         return (
-            <div className='flex md:flex-row flex-col md:items-center md:py-15 py-5'>
+            <div className='flex md:flex-row flex-col md:items-center md:py-15 py-5' key ={item.id}>
                 <div>
                     <span className='flex justify-center items-center text-white text-3xl bg-gradient-to-b from-orange-400 to-orange-600 w-15 h-15 rounded-full'>{item.icon}</span>
                 </div>

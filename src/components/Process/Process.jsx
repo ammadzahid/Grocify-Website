@@ -8,7 +8,7 @@ import { BsTruck } from 'react-icons/bs';
 const Process = () => {
     let rendersteps = steps.map(items => {
         return (
-            <div className={`flex-1 ${items.id % 2 === 0 ? 'md:-mt-50':''}`}>
+            <div className={`flex-1 ${items.id % 2 === 0 ? 'md:-mt-50':''}`} key={items.id}>
                 <span className='flex w-18 h-18 mx-auto md:mt-0 mt-10 bg-zinc-800 text-white  rounded-full outline-[3px] outline-offset-7 outline-zinc-800 outline-dashed text-7xl'>{items.number}</span>
                 <div className='flex items-center gap-x-4 md:mt-10 mt-5'>
                     <span className='flex justify-center items-center w-15 h-15 text-white text-3xl bg-gradient-to-b from-orange-400 to-orange-500 rounded-full'>{items.icone}</span>

@@ -40,8 +40,8 @@ const Testimonial = () => {
           {
             review.map(data => {
               return (
-                <SwiperSlide className='bg-zinc-100 p-5  rounded-xl'>
-                  <div className='flex flex-wrap gap-5 items-center'>
+                <SwiperSlide key={data.id} className='bg-zinc-100 p-5  rounded-xl'>
+                  <div className='flex flex-wrap gap-5 items-center' >
                     <div className='flex w-15 h-15 rounded-full outline-2 outline-offset-2 outline-orange-500 overflow-hidden'>
                       <img src={data.image} alt="image" className='w-full h-full' />
                     </div>
@@ -49,10 +49,10 @@ const Testimonial = () => {
                     <div>
                       <h5 className='text-zinc-800 font-bold text-2xl'>{data.name}</h5>
                       <p className='text-zinc-600'>{data.profession}</p>
-                      <span div className='flex gap-1 text-yellow-400'>
+                      <span className='flex gap-1 text-yellow-400'>
                         {
                           Array.from({ length: data.Rating }, (_, index) => (
-                            <FaStar />
+                            <FaStar key={index} />
                           ))
                         }
                       </span>

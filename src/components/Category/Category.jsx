@@ -8,7 +8,7 @@ const Category = () => {
 
   const renderCard = category.map(card => {
     return (
-      <div className='flex-1 '>
+      <div className='flex-1 ' key={card.id}>
         <div className='w-full min-h-[30vh] relative -mb-10'>
           <img src={card.image} alt="" className='absolute bottom-0' />
         </div>
