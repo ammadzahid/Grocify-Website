@@ -34,7 +34,7 @@ const Navbar = () => {
           </ul>
           <div className='flex items-center gap-x-5'>
             {/* input-field */}
-            <div className='md:flex text-center p-1 border-2 border-orange-500 rounded-full hidden'>
+            <div className='md:flex items-center text-center p-1 border-2 border-orange-500 rounded-full hidden'>
               <input type="text" name="text" id="text" placeholder='Search....' autoComplete='off'
                 className='flex-1 h-[5vh] px-3 focus:outline-none'
               />
