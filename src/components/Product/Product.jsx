@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Heading from '../../components/Heading/Heading.jsx';
 import Productlist from '../Productlist/Productlist.js';
 import Card from '../Card/Card.jsx';
-import Button from '../Button/Button.jsx';
+import { Link } from 'react-router-dom';
 
 const Product = () => {
   const categories = ['All', 'Fruits', 'Vegetables', 'Dairy', 'SeaFood'];
@@ -70,7 +70,8 @@ const Product = () => {
 
       {/* View All Button */}
       <div className="w-fit mx-auto">
-        <Button text="View All" />
+        <Link to="/allproducts" className=' text-white md:text-lg text-md bg-gradient-to-b from-orange-400 to-orange-500  py-2 px-5 rounded-[0.7rem]
+     transition-all hover:scale-105 hover:to-orange-600 cursor-pointer '>View All</Link>
       </div>
     </div>
   );

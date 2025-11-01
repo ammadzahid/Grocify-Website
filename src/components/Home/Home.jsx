@@ -11,7 +11,6 @@ import Footer from '../Footer/Footer.jsx'
 const Home = () => {
   return (
     <div>
-        <Navbar />
         <Hero />
         <Category />
         <Values />
@@ -19,7 +18,6 @@ const Home = () => {
         <Discount />
         <Process />
         <Testimonial />
-        <Footer />
     </div>
   )
 }
