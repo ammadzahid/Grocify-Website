@@ -19,7 +19,7 @@ const Card = ({name,price,image}) => {
       <div className='py-3 text-center'>
         <h3 className='text-xl font-semibold' >{name}</h3>
         <p className='text-xl font-bold mb-2'>${price.toFixed(2)}</p>
-        <Button text='Shop Now'/>
+        <Button text='Add to Cart'/>
       </div>
 
     </div>
